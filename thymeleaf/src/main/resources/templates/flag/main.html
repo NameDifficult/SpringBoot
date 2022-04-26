@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div th:insert="flag/footer::header"></div>
+  <hr>
+    <div th:insert="flag/footer::copy"></div>
+  <hr>
+
+    <div th:insert="flag/footer::funtpl(one='张三',two='李四')"></div>
+
+    <!--  th:replace -->
+</body>
+</html>

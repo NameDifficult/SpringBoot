@@ -1,0 +1,22 @@
+person:
+  username: lisi
+  boss: true
+  birth: 2019/12/12
+  age: 18
+ # interests: [篮球，足球]
+  interests:
+    - 篮球
+    - 足球
+    - 29
+  animal: [pig,cat]
+  score: {english: 80,math: 90}
+  salarys: [999,999]
+  pet:
+    name: hhh
+  allPets:
+    sick:
+      - {name: 阿狗}
+      - {name: 阿猫}
+    health:
+      - name: 啊化
+      - name: aaa

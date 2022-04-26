@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>判断</title>
+</head>
+<body>
+<p th:if="true">true显示--第一行</p>
+<p th:if="false">true显示--第二行</p>
+<p th:if="true">true显示--第三行</p>
+<p th:if="!false">!false--第四行</p>
+<p th:if="20>18">20大于18</p>
+<p th:if="20==18">20==18</p>
+<p th:if="true and 20>18">true and 20>18</p>
+<p th:if="'lisi'=='lisi'">字符串判断----  'lisi'=='lisi'</p>
+<p th:if="'lisi'eq'lisi'">字符串判断----  'lisi'eq'lisi'</p>
+<p th:if="'lisi'eq'san'">字符串判断----  'lisi'eq'lisi'</p>
+<p th:if="''eq null">字符串判断----  ''eq null</p>
+<p th:text="10==10?'aaaaa':'bbbbb'">三目表达式-----10==10?1:0</p>
+<p th:text="10==11?'aaaaa':'bbbbb'">三目表达式-----10==10?1:0</p>
+</body>
+</html>

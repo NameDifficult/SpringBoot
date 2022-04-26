@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<h1>首页</h1>
+<a th:href="@{/success}">thymeleaf方式获取数据</a><br>
+<a th:href="@{/success1(id=${id0},username='张三')}">链接中加值</a><br>
+<a th:href="@{/success2}">算术</a>
+<a th:href="@{/success3}">判断</a>
+<a th:href="@{/success4}">循环</a>
+<a th:href="@{/model}">模板</a>
+<a th:href="@{/inline}">inline</a>
+</body>
+</html>

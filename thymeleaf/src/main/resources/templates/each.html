@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>循环</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <td>id</td>
+        <td>username</td>
+        <td>password</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="list1:${list}">
+        <td th:text="${list1.id}"></td>
+        <td th:text="${list1.username}"></td>
+        <td th:text="${list1.password}"></td>
+    </tr>
+    </tbody>
+</table>
+<hr>
+
+<h1>获取循环状态变量</h1>
+<table>
+    <thead>
+    <tr>
+        <td>信息</td>
+        <td>奇偶数</td>
+        <td>索引</td>
+        <td>是否第一个</td>
+        <td>id</td>
+        <td>username</td>
+        <td>password</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="list1,loopStatus:${list}">
+        <td th:text="${loopStatus.count}+'/'+${loopStatus.size}"></td>
+        <td th:text="${loopStatus.odd?'奇数':'偶数'}"></td>
+        <td th:text="${loopStatus.index}"></td>
+        <td th:text="${loopStatus.first}"></td>
+        <td th:text="${list1.id}"></td>
+        <td th:text="${list1.username}"></td>
+        <td th:text="${list1.password}"></td>
+    </tr>
+    </tbody>
+</table>
+<hr>
+
+<h1>循环数组</h1>
+<ul>
+    <li th:each="arr:${strings}" th:text="${arr}">值</li>
+</ul>
+<hr>
+
+<div>
+    <select>
+        <option th:each="city:${citys}" th:value="${city.key}" th:text="${city.value}">文本</option>
+    </select>
+</div>
+
+
+</body>
+</html>
