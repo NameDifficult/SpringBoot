@@ -18,8 +18,4 @@ import org.springframework.stereotype.Component;
 @Data //自动生成get、set方法
 public class Pet {
     private String name;
-
-    public Pet(String name) {
-        this.name = name;
-    }
 }
