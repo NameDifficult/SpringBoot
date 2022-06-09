@@ -1,0 +1,13 @@
+#服务端口
+server:
+  port: 9003
+
+#服务名称
+spring:
+  redis:
+    host: 192.168.78.132
+    port: 6379
+    timeout: 1000
+    #springsession配置
+  session:
+    store-type: redis
